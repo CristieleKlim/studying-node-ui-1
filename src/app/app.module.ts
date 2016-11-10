@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 //IMPORT PAGES HERE
 import { MarcaPage } from '../pages/marca-page/marca-page';
 import { MarcaForm } from '../pages/marca-form/marca-form';
+import { MarcaDetail } from '../pages/marca-detail/marca-detail';
 
 //IMPORT PROVIDERS HERE
 import { MarcaData } from '../providers/marca-data';
@@ -20,6 +21,7 @@ import { Page2 } from '../pages/page2/page2';
     MyApp,
     MarcaPage,
     MarcaForm,
+    MarcaDetail,
     Page1,
     Page2
   ],
@@ -32,6 +34,7 @@ import { Page2 } from '../pages/page2/page2';
     MyApp,
     MarcaPage,
     MarcaForm,
+    MarcaDetail,
     Page1,
     Page2
   ],

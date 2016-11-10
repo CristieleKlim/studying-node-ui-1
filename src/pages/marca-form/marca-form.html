@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Adicionar Marca</ion-title>
+    <ion-title>{{title}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,7 +15,7 @@
     <ion-label floating>Nome</ion-label>
     <ion-input type="text" [(ngModel)]="marca.nome"></ion-input>
   </ion-item>
-  <button ion-button type="submit" block (click)="save()">Add Todo</button>
+  <button ion-button type="submit" block (click)="save()">OK</button>
 
 </ion-list>
 

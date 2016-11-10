@@ -7,8 +7,9 @@ import { Marca } from '../../models/marca';
 // PROVIDER
 import { MarcaData } from '../../providers/marca-data';
 
-// PAGINA FORMULARIO
+// PAGES
 import { MarcaForm } from '../marca-form/marca-form';
+import { MarcaDetail } from '../marca-detail/marca-detail';
 
 @Component({
   selector: 'page-marca-page',
@@ -51,7 +52,14 @@ export class MarcaPage {
   }
 
   goToCreateMarca(){
-    this.navCtrl.push(MarcaForm,{});
+    this.navCtrl.push(MarcaForm);
+  }
+
+  itemTapped(event, item) {
+    
+    this.navCtrl.push(MarcaDetail, {
+      marca: item
+    });
   }
 
 }

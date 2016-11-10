@@ -35,4 +35,20 @@ export class MarcaData {
       .map(res => res.json());
   }
 
+
+  update(data){
+    let body = JSON.stringify(data); 
+
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    let options = new RequestOptions({ headers: headers });
+
+    return this.http.put(`${this.apiUrl}/marca/`, body, options)
+      .map(res => res.json());
+  }
+
+  delete(data){
+    return this.http.delete(`${this.apiUrl}/marca/${data._id}`)
+      .map(res => res);
+  }
+
 }

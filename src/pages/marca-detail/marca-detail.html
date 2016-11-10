@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Detalhes da marca</ion-title>
+    <ion-buttons end>
+      <button ion-button color="royal" (click)="updateItem($event, selectedItem)">
+         <ion-icon md="md-create"></ion-icon>
+      </button>
+      <button ion-button color="royal" (click)="deleteItem($event, selectedItem)">
+         <ion-icon md="md-trash"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-label><b>ID</b></ion-label>
+  <p>{{selectedItem._id}}</p>
+
+  <ion-label><b>Nome</b></ion-label>
+  <p>{{selectedItem.nome}}</p>
+
+
+</ion-content>
